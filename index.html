@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geometrycel</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body class="m-8">
+    <header>
+
+    </header>
+
+    <main>
+        <div class="flex flex-col md:flex-row">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-3xl font-bold">triangle!</h2>
+                      <p id="">Area = 0.5 X b X h</p>
+                      <div >
+                        <input id="triangle_base" class="w-24 p-2 text-3xl rounded-sm" type="text" name="" id="" placeholder="b">
+                        <span class="mx-2">cm</span>
+                        <input class="w-24 p-2 text-3xl rounded-sm" type="text" name="" id="triangle_height" placeholder="h">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p>Area: <span id="triangle_area"></span><span> cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="calculateTriangelArea()" class="btn btn-primary w-full">Calcoulet</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100 shadow-xl text-center">
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                      <h2 class="text-3xl font-bold">Rectangle!</h2>
+                      <p>Area (A) = W X I </p>
+                      <div>
+                      <input class="w-24 p-2 rounded-sm text-3xl" type="text" name="" id="" placeholder="W">
+                      <span class="mx-2">cm</span>
+                      <input class="w-24 p-2 rounded-sm text-3xl" type="text" name="" id="" placeholder="I">
+                      <span> cm</span>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Calcoulet</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Area calculation -->
+            <div class="w-96 border-2 border-gray-700 rounded-lg p-4">
+                <h2 class="text-center">Area Calculation</h2>
+            </div>
+        </div>
+
+        
+    </main>
+
+  
+
+
+    <script src="script.js"></script>
+</body>
+</html>
